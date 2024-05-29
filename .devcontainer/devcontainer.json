@@ -1,0 +1,11 @@
+{
+    "image": "django_env:0.0.3",
+    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+    "appPort": ["8080:8080"],
+    "customizations": {
+        "vscode": {
+          "extensions": ["ms-dotnettools.vscode-dotnet-runtime", "ms-python.python", "EditorConfig.EditorConfig"]
+        }
+    },
+    "shutdownAction": "stopContainer"
+}
